@@ -14,6 +14,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Run CodeSentinel AI
         uses: kushmunjal/codesentinel-ai@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        with:
+          provider: 'openai'
+          model: 'gpt-4o'
+          api_key: ${{ secrets.LLM_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
