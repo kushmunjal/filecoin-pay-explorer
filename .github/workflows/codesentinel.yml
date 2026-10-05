@@ -21,6 +21,7 @@ jobs:
         uses: kushmunjal/codesentinel-ai@main
         with:
           provider: 'openai'
-          model: 'gpt-4o'
+          model: 'llama3-70b-8192'
+          base_url: 'https://api.groq.com/openai/v1'
           api_key: ${{ secrets.LLM_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
