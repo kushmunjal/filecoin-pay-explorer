@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Run CodeSentinel AI
-        uses: kushmunjal/codesentinel-ai@main
+        uses: kushmunjal/codesentinel-ai@v1
         with:
           provider: 'openai'
           model: 'openai/gpt-oss-120b'
